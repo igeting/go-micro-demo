@@ -12,7 +12,7 @@ import (
 )
 
 var (
-	ConsulClusterServer = []string{"iopening.cn:2379"}
+	ConsulClusterServer = []string{"127.0.0.1:2379"}
 )
 
 type StudentManager struct{}

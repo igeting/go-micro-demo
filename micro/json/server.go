@@ -18,7 +18,7 @@ func (g *Greeter) Hello(ctx context.Context, name string, msg *string) error {
 func main() {
 	service := micro.NewService(
 		micro.Name("json_server"),
-		micro.Registry(etcd.NewRegistry(registry.Addrs("iopening.cn:2379"))),
+		micro.Registry(etcd.NewRegistry(registry.Addrs("127.0.0.1:2379"))),
 	)
 	service.Init()
 

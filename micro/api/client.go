@@ -20,7 +20,7 @@ func cli() {
 				selector.NewSelector(
 					selector.SetStrategy(selector.Random),
 					selector.Registry(
-						etcd.NewRegistry(registry.Addrs("iopening.cn:2379")),
+						etcd.NewRegistry(registry.Addrs("127.0.0.1:2379")),
 					),
 				),
 			),
@@ -42,7 +42,7 @@ func cli() {
 }
 
 func api() {
-	service, err := etcd.NewRegistry(registry.Addrs("iopening.cn:2379")).GetService("api_server")
+	service, err := etcd.NewRegistry(registry.Addrs("127.0.0.1:2379")).GetService("api_server")
 	if err != nil {
 		fmt.Println(err)
 	}

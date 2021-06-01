@@ -13,7 +13,7 @@ protocal_path = os.path.join(current_fonder_path, "pb")
 print(protocal_path)
 sys.path.append(protocal_path)
 
-_HOST = 'localhost'
+_HOST = '127.0.0.1'
 _PORT = '8080'
 
 

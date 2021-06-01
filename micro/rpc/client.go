@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	ConsulClusterClient = []string{"iopening.cn:2379"}
+	ConsulClusterClient = []string{"127.0.0.1:2379"}
 )
 
 func main() {

@@ -11,7 +11,7 @@ import (
 
 func main() {
 	service := micro.NewService(
-		micro.Registry(etcd.NewRegistry(registry.Addrs("iopening.cn:2379"))),
+		micro.Registry(etcd.NewRegistry(registry.Addrs("127.0.0.1:2379"))),
 	)
 	service.Init()
 

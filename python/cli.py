@@ -1,7 +1,7 @@
 import json
 import socket
 
-rpc = socket.create_connection(("localhost", 8080))
+rpc = socket.create_connection(("127.0.0.1", 8080))
 req = dict(method = "Arith.Multiply", params = [{'A': 3, 'B': 3}])
 msg = json.dumps(req).encode()
 rpc.sendall(msg)

@@ -15,7 +15,7 @@ print(protocal_path)
 sys.path.append(protocal_path)
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
-_HOST = 'localhost'
+_HOST = '127.0.0.1'
 _PORT = '8080'
 
 
