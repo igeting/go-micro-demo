@@ -22,7 +22,11 @@ func main() {
 		web.Address(":8001"),
 		web.Advertise(":8001"),
 		web.Handler(router),
-		web.Registry(etcd.NewRegistry(registry.Addrs("127.0.0.1:2379"))),
+		web.Registry(
+			etcd.NewRegistry(
+				registry.Addrs("127.0.0.1:2379"),
+			),
+		),
 		web.Metadata(map[string]string{"protocol": "http"}),
 	)
 
